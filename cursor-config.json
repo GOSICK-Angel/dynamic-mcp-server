@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "my-dynamic-mcp-server": {
+      "url": "http://localhost:3000/sse?apiKey=2ae6e693-ae5e-4087-919d-3079520e5b3b"
+    }
+  }
+} 

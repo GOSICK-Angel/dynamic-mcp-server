@@ -125,6 +125,7 @@ export class UserRepository {
             email,
             roles: ["admin"],
             name: "Admin User",
+            apiKey: randomUUID(), // Generate API key for new admin user
           },
         },
         { upsert: true, new: true },

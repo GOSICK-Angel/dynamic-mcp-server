@@ -24,6 +24,7 @@
     "test:typecheck": "tsc -p tsconfig.test.json --noEmit",
     "typecheck": "tsc --noEmit --skipLibCheck",
     "prepare": "npm run build",
+    "server": "npx ts-node --esm server.ts",
     "example:echo": "tsc --noEmit && node --import 'data:text/javascript,import { register } from \"node:module\"; import { pathToFileURL } from \"node:url\"; register(\"ts-node/esm\", pathToFileURL(\"./\"));' examples/echo-server/index.ts",
     "example:base": "tsc --noEmit && node --import 'data:text/javascript,import { register } from \"node:module\"; import { pathToFileURL } from \"node:url\"; register(\"ts-node/esm\", pathToFileURL(\"./\"));' examples/base-server/index.ts",
     "example:weather": "node examples/weather-server/index.js"
